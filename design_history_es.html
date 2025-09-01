@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia del Diseño: Objetos Icónicos por Período</title>
+    <style>
+        body {
+            font-family: Skolar Sans Latin Condensed, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #ccd3cf;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .period {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .period:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .period h2 {
+            color: #2c3e50;
+        }
+        .object {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+        .object img {
+            max-width: 200px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 5px;
+            display: none; /* Hidden until loaded */
+        }
+        .object img.loaded {
+            display: block;
+        }
+        .object-details h3 {
+            margin: 0;
+            color: #34495e;
+        }
+        .object-details p {
+            margin: 5px 0;
+            color: #555;
+        }
+        .characteristics {
+            margin-top: 10px;
+        }
+        .characteristics ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .loading {
+            text-align: center;
+            color: #777;
+            font-style: italic;
+        }
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .credits {
+            margin: 40px 0 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            color: #555;
+        }
+        .credits h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .credits p {
+            margin: 5px 0;
+        }
+        @media (max-width: 600px) {
+            .object {
+                flex-direction: column;
+                align-items: center;
+            }
+            .object img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Historia del Diseño: Objetos Icónicos por Período</h1>
+
+    <div class="loading">Cargando tus imágenes...</div>
+
+    <div class="period">
+        <h2>Período Preindustrial (Antes de 1750)</h2>
+        <p><strong>Centros Geográficos e influencias notables:</strong> Asia, Oriente Medio, Europa | patrones geométricos islámicos, porcelana china, artes decorativas europeas</p>
+        <div class="object">
+            <img src="https://i.imgur.com/4FToZdl.png" alt="Jarrón de la Dinastía Ming" class="object-image" data-name="Ming Dynasty Vase">
+            <div class="object-details">
+                <h3>Jarrón de Porcelana de la Dinastía Ming</h3>
+                <p>Cerámica blanca y azul con motivos tradicionales</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Forma bulbosa elegante con cuello estrecho</li>
+                        <li>Motivos florales azul cobalto sobre fondo blanco</li>
+                        <li>Simetría perfecta y proporciones refinadas</li>
+                        <li>Superficie esmaltada brillante con detalles precisos</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Representa la cúspide del diseño artesanal donde forma, decoración y función eran inseparables. Dominio técnico y refinamiento estético logrados a través de siglos de conocimiento gremial.</p>
+                <p><strong>Evaluación crítica:</strong> Diseño inseparable de artesanía; decisiones estéticas impulsadas por limitaciones materiales y simbolismo cultural más que por pensamiento sistemático sobre el diseño.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Revolución Industrial (1750-1850)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Gran Bretaña, Europa Occidental, Norte América | Josiah Wedgwood (cerámica industrial), ingenieros como diseñadoes involuntarios</p>
+        <div class="object">
+            <img src="https://i.imgur.com/fq3jgfE.png" alt="Cerámica industrial de Wedgwood" class="object-image" data-name="Cerámica industrial de Wedgwood">
+            <div class="object-details">
+                <h3>Cerámica industrial de Wedgwood</h3>
+                <p>Cerámica neoclásica con decoración en relieve aplicado</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Cuerpo de gres azul pálido mate</li>
+                        <li>Figuras y motivos clásicos en relieve blanco</li>
+                        <li>Formas moldeadas precisas y repetibles</li>
+                        <li>Líneas limpias con decoración contenida</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Estableció el modelo de bienes de consumo diseñados y la identidad de marca. Primeros intentos de matrimonio entre producción industrial y consideración estética. </p>
+                <p><strong>Evaluación crítica:</strong> Producción en masa, estandardización, declive de tradiciones artesanales. Este período representa una ruptura entre el diseño y la fabricación, creando las condiciones para convertir al diseño en disciplina autónoma, a la vez que inicialmente producía objetos estéticamente pobres.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Movimiento Arts and Crafts (1860-1920)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Gran Bretaña, extendiéndose globalmente | William Morris, John Ruskin, Charles Rennie Mackintosh</p>
+        <div class="object">
+            <img src="https://i.imgur.com/KUphDYO.png" alt="Papel Tapiz de William Morris" class="object-image" data-name="William Morris Wallpaper">
+            <div class="object-details">
+                <h3>Papel Tapiz de William Morris</h3>
+                <p>Patrón botánico con formas orgánicas fluidas</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Motivos botánicos intrincados con hojas fluidas</li>
+                        <li>Verdes intensos y tonos tierra cálidos</li>
+                        <li>Composición simétrica pero orgánica</li>
+                        <li>Textura y profundidad impresas a mano</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Encarnó la filosofía del movimiento de objetos hermosos hechos a mano para la vida cotidiana. Estableció al diseñador como reformador social y crítico cultural.</p>
+                <p><strong>Evaluación crítica:</strong> Reacción contra la industrialización, énfasis en la artesanía, integración arte-utilidad. Progresista en su conciencia social, pero históricamente ingenua en su postura antiindustrial. Estableció principios cruciales de responsabilidad social del diseño</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Art Nouveau (1890-1910)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Francia, Bélgica, Austria, Escocia, Barcelona | Victor Horta, Louis Comfort Tiffany, Antoni Gaudí, Charles Rennie Mackintosh</p>
+        <div class="object">
+            <img src="https://i.imgur.com/V9g0T7y.png" alt="Lámpara de Vidrio Tiffany" class="object-image" data-name="Tiffany Glass Lamp">
+            <div class="object-details">
+                <h3>Lámpara de Vidrio Tiffany</h3>
+                <p>Pantalla de vidrio emplomado con motivos botánicos</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Formas orgánicas fluidas inspiradas en la naturaleza</li>
+                        <li>Vidrio tintado en ámbar cálido y verde</li>
+                        <li>Base de bronce curvada con detalles botánicos</li>
+                        <li>Integración de estructura y ornamento</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Representó el primer movimiento de diseño moderno verdaderamente internacional, rompiendo con los renacimientos históricos mientras celebraba la artesanía y las formas naturales.</p>
+                <p><strong>Evaluación crítica:</strong> Énfasis en la expresión artística individual, incompatible con los métodos de producción industrial.
+            </div>
+        </div>
+    </div>
+
+ <div class="period">
+        <h2>Constructivismo Ruso (1915-1935)</h2>
+        <p><strong>Centro Geográfico y figuras clave:</strong> Unión Soviética - URSS | El Lissitzky, Alexander Rodchenko, Varvara Stepanova</p>
+        <div class="object">
+            <img src="https://i.imgur.com/Tlrx48O.png" alt="Constructivismo Ruso" class="object-image" data-name="Diseño Ruso">
+            <div class="object-details">
+                <h3>Vestido con estampado estilo soviético (IA)</h3>
+                <p>Diseño gráfico soviético usado en textiles</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Estética revolucionaria</li>
+                        <li>Arte funcional</li>
+                        <li>Diseño gráfico innovador</li>
+                        <li>Formas geométricas y lineales; colores primarios (rojo, blanco, negro)</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica y evaluación crítica:</strong> Movimiento artístico vanguardista surgido tras la Revolución Bolchevique de 1917. Buscaba crear un arte útil, funcional y ligado a la vida cotidiana, la tecnología y la propaganda socialista. Pese a que Stalin censuró y suprimió el movimiento, el constructivismo soviético influyó el diseño gráfico, la arquitectura y la creación contemporánea a lo largo del siglo XX.
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Bauhaus y Alto Modernismo (1919-1933)</h2>
+        <p><strong>Centro Geográfico y figuras clave:</strong> Alemania (y diáspora en USA) | Walter Gropius, Ludwig Mies van der Rohe, Marcel Breuer, László Moholy-Nagy</p>
+        <div class="object">
+            <img src="https://i.imgur.com/Jh6F7oF.png" alt="Silla Wassily" class="object-image" data-name="Wassily Chair">
+            <div class="object-details">
+                <h3>Silla Wassily de Marcel Breuer</h3>
+                <p>Silla cantilever de acero tubular y lona</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Estructura de tubo de acero cromado continuo</li>
+                        <li>Asiento y respaldo de cuero negro</li>
+                        <li>Diseño cantilever sin patas traseras</li>
+                        <li>Formas geométricas puras, mínima ornamentación</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Ejemplifica los principios del Bauhaus de materiales industriales, forma funcional y diseño democrático. Se convirtió en un ícono del diseño de muebles modernista.</p>
+                <p><strong>Evaluación crítica:</strong> "La forma sigue a la función", "Menos es más", materiales industriales, educación sistemática en diseño. Escuela de diseño más influyente de la historia. Pretensiones universalistas que enmascararon especificidad cultural y a menudo ignoraron necesidades del usuario en favor de la pureza formal.
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Estilización Estadounidense (1930-1950)</h2>
+        <p><strong>Centro Geográfico y figuras clave:</strong> Estados Unidos | Raymond Loewy, Henry Dreyfuss, Walter Dorwin Teague</p>
+        <div class="object">
+            <img src="https://i.imgur.com/xR8I2fj.png" alt="Botella de Coca-Cola" class="object-image" data-name="Coca-Cola Bottle">
+            <div class="object-details">
+                <h3>Botella de Coca-Cola de Raymond Loewy</h3>
+                <p>Botella de vidrio estilizada con contornos distintivos</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Silueta curvada y aerodinámica</li>
+                        <li>Lados estriados para agarre e interés visual</li>
+                        <li>Forma cónica que sugiere velocidad y modernidad</li>
+                        <li>Etiqueta roja clásica con tipografía fluida</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Transformó un contenedor utilitario en un símbolo de marca icónico, estableciendo el diseño industrial como una disciplina comercial.</p>
+                <p><strong>Evaluación crítica:</strong> Democratizó el buen diseño, pero también estableció la problemática relación entre diseño y consumo que persiste hasta nuestros días. A menudo priorizó la apariencia sobre la auténtica mejora funcional.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Diseño escandinavo (1930s-1960s)</h2>
+        <p><strong>Centro Geográfico y figuras clave:</strong> Dinamarca, Suecia, Finlandia | Arne Jacobsen, Alvar Aalto, Finn Juhl, Bruno Mathsson</p>
+        <div class="object">
+            <img src="https://i.imgur.com/dW4MG5D.png" alt="Silla Huevo de Arne Jacobsen" class="object-image" data-name="Silla Huevo">
+            <div class="object-details">
+                <h3>Silla Huevo de Arne Jacobsen</h3>
+                <p>Fibra de vidrio moldeada con superficie tapizada</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Forma curva orgánica, similar a un huevo</li>
+                        <li>Tapizado en tela o cuero de alta calidad</li>
+                        <li>Base giratoria de aluminio pulido</li>
+                        <li>Forma envolvente para mayor comodidad y privacidad</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Combina innovación modernista y comodidad humanística, encarnando valores escandinavos de democracia y bienestar.</p>
+                <p><strong>Evaluación crítica:</strong> Diseño democrático, materiales naturales, enfoque centrado en el humano. Su celebración a menudo oscurece las condiciones sociales y democráticas que lo hicieron posible.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Estilo Internacional Suizo (1950s-1970s)</h2>
+        <p><strong>Centro Geográfico y figuras clave:</strong> Suiza, expansión global | Josef Müller-Brockmann, Max Miedinger, Adrian Frutiger</p>
+        <div class="object">
+            <img src="https://i.imgur.com/6aDheo7.png" alt="Tipografía Helvetica" class="object-image" data-name="Helvetica Typeface">
+            <div class="object-details">
+                <h3>Muestra de Tipografía Helvetica</h3>
+                <p>Sistema tipográfico sans-serif limpio y neutral</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Tipografía sans-serif con peso de trazo uniforme</li>
+                        <li>Fuentes high x-height para máxima legibilidad</li>
+                        <li>Carácter neutral y objetivo</li>
+                        <li>Diseño basado en retículas con amplio espacio en blanco</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Se volvió lenguaje visual del modernismo corporativo y la comunicación internacional, encarnando valores suizos de precisión y neutralidad.</p>
+                <p><strong>Evaluación crítica:</strong> Sus pretensiones de neutralidad enmascararon posiciones ideológicas e imperialismo cultural.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Diseño Posmoderno (1980s-1990s)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Italia, Estados Unidos, G Bretaña | Memphis Group (Ettore Sottsass), Michael Graves, Neville Brody </p>
+        <div class="object">
+            <img src="https://i.imgur.com/weq5pnV.png" alt="Estantería Carlton" class="object-image" data-name="Carlton Bookshelf">
+            <div class="object-details">
+                <h3>Estantería Carlton de Ettore Sottsass</h3>
+                <p>Divisor de ambientes/estantería laminada multicolor</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Composición asimétrica y angular</li>
+                        <li>Colores primarios brillantes en acabado laminado</li>
+                        <li>Proporciones juguetonas, casi caricaturescas</li>
+                        <li>Presencia escultórica antifuncional</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Desafió la ortodoxia modernista a través de la ironía y la decoración, abriendo el diseño a preocupaciones culturales y emocionales más amplias.</p>
+                <p><strong>Evaluación crítica:</strong> Desafía dogmas modernistas y reconoce la especificidad cultural del diseño. A menudo resultó en un pastiche estilístico superficial en vez de una reconsideración fundamental del papel del diseño.
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Revolución Digital y Nuevos Medios (1990s-2010s)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Silicon Valley, Global | David Carson, Jonathan Ive, Stefan Sagmeister, John Maeda</p>
+        <div class="object">
+            <img src="https://i.imgur.com/vSZjc5k.png" alt="iPhone Original" class="object-image" data-name="Original iPhone">
+            <div class="object-details">
+                <h3>Apple iPhone (Original)</h3>
+                <p>Teléfono inteligente con pantalla táctil e interfaz minimalista</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Construcción elegante de vidrio negro y aluminio</li>
+                        <li>Botón de inicio único con controles físicos mínimos</li>
+                        <li>Interfaz táctil limpia e intuitiva</li>
+                        <li>Iconos de aplicaciones coloridos en disposición de cuadrícula</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Revolucionó el diseño de interacción y estableció la plantilla para dispositivos inteligentes, extendiendo el diseño a experiencias y ecosistemas digitales.</p>
+                <p><strong>Evaluación crítica:</strong> Diseño basado en pantalla, interactividad, experiencia de usuario, conectividad global. Transformó fundamentalmente la práctica del diseño y amplió su alcance, pero también creó nuevas formas de exclusión y aceleró los ciclos de consumo. Enfoque en la experiencia de usuario (UX) a menudo ignora consecuencias sociales más amplias.
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Diseño Sustentable y Social (2000s-Presente)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Global, concentrado en Europa nórdica | Victor Papanek (influencia retrospectiva), Ezio Manzini, Bruce Mau</p>
+        <div class="object">
+            <img src="https://i.imgur.com/dnjq9K4.png" alt="Campaña Patagonia Worn Wear" class="object-image" data-name="Patagonia Worn Wear Campaign">
+            <div class="object-details">
+                <h3>Campaña Patagonia Worn Wear</h3>
+                <p>Marca anticonsumo y servicios de reparación</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Fotografía honesta de productos usados y reparados</li>
+                        <li>Paleta de colores en tonos tierra</li>
+                        <li>Diseños simples de estilo documental</li>
+                        <li>Énfasis en historias sobre productos</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica:</strong> Representa la evolución del diseño hacia el pensamiento sistémico y la responsabilidad social, desafiando paradigmas de diseño basados en el consumo.</p>
+                <p><strong>Evaluación crítica:</strong> Conciencia ambiental pensamiento sistémico, diseño participativo. Representa una maduración del pensamiento de diseño (design thinking) más allá de preocupaciones formales. A menudo se debate entre transformación genuina y lavado de imagen ecológica o conciencia social superficial.
+            </div>
+        </div>
+    </div>
+
+    <div class="period">
+        <h2>Tendencias críticas actuales (2010s-Presente)</h2>
+        <p><strong>Centros Geográficos y figuras clave:</strong> Global, mediado digitalmente | Diseño decolonial, diseño especulativo, justicia en el diseño, diseño asistido por IA</p>
+        <div class="object">
+            <img src="https://i.imgur.com/jxcrRcI.png" alt="Tendencias críticas" class="object-image" data-name="Diseño decolonial">
+            <div class="object-details">
+                <h3>Diseño decolonial</h3>
+                <p>Vestido con patrones indígenas</p>
+                <div class="characteristics">
+                    <h4>Características Visuales:</h4>
+                    <ul>
+                        <li>Diseño Descolonizante → Énfasis en diversidad cultural, conocimientos indígenas, rechazo a eurocéntrismo.</li>
+                        <li>Justicia en el Diseño → Prácticas de diseño inclusivas centradas en comunidades marginadas y métodos participativos.</li>
+                        <li>Diseño Asistido por IA → Uso de IA generativas para transformar procesos creativos y colaboración humanos-IA.</li>
+                    </ul>
+                </div>
+                <p><strong>Importancia Histórica y evaluación crítica:</strong> Momento actual caracterizado por cuestionar supuestos fundamentales del diseño, estructuras de poder y su papel futuro. Es a la vez el período más conectado globalmente y más fragmentado en la historia del diseño.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Observaciones">
+        <h2>Notas críticas sobre esta periodización</h2>
+        <p>Esta periodización revela varios patrones importantes: 1) tensión constante entre expresión individual y producción sistemática; 2) ciclos recurrentes de reacción contra las ortodoxias previas; 3) expansión gradual del alcance del diseño, desde los objetos a los sistemas y a las relaciones sociales; 4) constante desafío de equilibrar preocupaciones estéticas, funcionales y sociales.<br> <br> 
+La concentración geográfica de la innovación en diseño en el Norte Global refleja patrones más amplios de poder económico y cultural, mientras que los movimientos actuales desafían cada vez más esta centralización. Las "soluciones" de cada período crearon nuevos problemas, lo cual sugiere que la historia del diseño es menos una historia de progreso que de negociación continua entre valores y limitaciones en pugna.<br> <br> 
+Más crucial aún, esta historia revela cómo el diseño ha sido tanto herramienta de democratización como de exclusión, de progreso y de explotación, de florecimiento humano y de destrucción ambiental. Comprender estas contradicciones es esencial para comprender el papel futuro del diseño.</p>
+    </div>
+
+    <div class="credits">
+        <h2>Créditos</h2>
+<div class="logo-container">
+  <img src="https://i.imgur.com/bAZNAU9.gif" alt="Logo UAM" width="100" height="auto">
+</div>
+        <small><p>Página creada por gre hernandez (grehz@yahoo.com).</p>
+        <p>Profesor-investigador Titular. División de Ciencias y Artes para el Diseño, UAMX.</p>
+        <p>Información recopilada de diversas fuentes históricas y académicas sobre diseño y artes decorativas.</p>
+        <p>Agradecimientos especiales a los diseñadores, historiadores y museos que han documentado y preservado estos objetos emblemáticos.</p>
+        <p>Diseño web y código generados por IA con prompts e iteraciones de grehz: Claude (periodización inicial), ChatGPT (imágenes), Claude y Grok (código).
+        <p>Fonts del texto: Skolar Sans Latin Condensed.</p>
+        <p>Derechos Reservados &copy; 2025</p>
+
+</small>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const images = document.querySelectorAll('.object-image');
+            const loadingMessage = document.querySelector('.loading');
+
+            let loadedImages = 0;
+            const totalImages = images.length;
+
+            if (totalImages === 0) {
+                loadingMessage.style.display = 'none';
+                return;
+            }
+
+            images.forEach(img => {
+                const imgName = img.getAttribute('data-name');
+                img.addEventListener('load', () => {
+                    img.classList.add('loaded');
+                    loadedImages++;
+                    console.log(`Image loaded: ${imgName} (${img.src})`);
+                    if (loadedImages === totalImages) {
+                        loadingMessage.style.display = 'none';
+                    }
+                });
+                img.addEventListener('error', () => {
+                    console.error(`Failed to load image: ${imgName} (${img.src})`);
+                    img.src = 'https://via.placeholder.com/200x200?text=Image+Not+Found';
+                    img.classList.add('loaded');
+                    const errorDiv = document.createElement('div');
+                    errorDiv.className = 'error-message';
+                    errorDiv.textContent = `Failed to load image: ${imgName}`;
+                    img.parentElement.appendChild(errorDiv);
+                    loadedImages++;
+                    if (loadedImages === totalImages) {
+                        loadingMessage.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
